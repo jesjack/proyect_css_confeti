@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/css/main1.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#000',
+                        white: '#fff',
+                    }
+                }
+            }
+        }
+    </script>
+    <!--suppress HtmlDeprecatedAttribute -->
+    <style type="text/tailwindcss">
+        .btn {
+            @apply font-bold rounded py-2 px-4;
+        }
+        .btn-black {
+            @apply bg-black text-white;
+        }
+        .btn-white {
+            @apply bg-white text-black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                <span data-huevo="k"></span>
+                <span>rgb</span>
+            </h1>
+            <label for="burger">
+                <input type="checkbox" id="burger">
+                <span class="btn btn-white">☰</span>
+            </label>
+            <menu>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Catrina</a>
+                </li>
+                <li>
+                    <a href="#">Diario</a>
+                </li>
+                <li>
+                    <a href="#">Cart</a>
+                </li>
+                <li>
+                    <a href="#">Cliente</a>
+                </li>
+            </menu>
+            <button class="btn btn-black">Contáctanos</button>
+        </nav>
+        <div>
+            <div></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.862411422296!2d-104.64843958915436!3d24.035916578386914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bb7a246ee34eb%3A0xa27683a469a5dfd7!2sDepto.%20de%20Sistemas%20Computacionales%20ITD%20Zona%20Norte!5e0!3m2!1ses-419!2smx!4v1709138264763!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </header>
+</body>
+</html>
